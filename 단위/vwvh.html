@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>vw/vh vs % 단위 비교</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+    .container {
+      width: 80vw;
+      height: 60vh;
+      background: #eee;
+      margin: 20px auto;
+      position: relative;
+      border: 2px solid #333;
+    }
+    .box-vw {
+      width: 50vw;
+      height: 20vh;
+      background: #4fc3f7;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    .box-percent {
+      width: 50%;
+      height: 20%;
+      background: #ffb74d;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+    .desc {
+      margin: 20px;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+  <div class="desc">
+    <strong>vw/vh</strong>는 브라우저의 <u>뷰포트(화면 전체)</u> 기준,<br>
+    <strong>%</strong>는 <u>부모 요소</u> 기준입니다.<br>
+    아래 박스의 크기를 비교해보세요.
+  </div>
+  <div class="container">
+    <div class="box-vw">50vw × 20vh</div>
+    <div class="box-percent">50% × 20%</div>
+  </div>
+</body>
+</html>
