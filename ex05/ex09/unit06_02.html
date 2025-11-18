@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>그리드</title>
+	<style>
+		.cnt>div{color: #fff; text-align: center; font-size: 2em;}
+		.cnt>div:nth-child(1){background: red;}
+		.cnt>div:nth-child(2){background: orange;}
+		.cnt>div:nth-child(3){background: yellow;}
+		.cnt>div:nth-child(4){background: green;}
+		.cnt>div:nth-child(5){background: blue;}
+		.cnt>div:nth-child(6){background: purple;}
+		.cnt{
+			display: grid;
+			/* grid-template-columns: 100px 200px 300px;
+			grid-auto-rows: 100px; */
+			margin-bottom: 10px;
+		}
+		.cnt1{
+			grid-template-columns: repeat(3, 1fr)
+		}
+		.cnt2{
+			font-size: 11px;
+			width: 1200px;
+			border: 1px solid #ccc;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: minmax(300px, auto);
+		}
+	</style>
+</head>
+<body>
+	<div class="cnt">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+	<div class="cnt cnt1">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div>5</div>
+		<div>6</div>
+	</div>
+	<div class="cnt cnt2">
+		<div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus sapiente cupiditate voluptatem mollitia voluptates consectetur est, nobis illo dolor accusantium? Officiis sunt eveniet aliquam, molestiae aliquid sed. Error, repellendus quo!</div>
+		<div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus sapiente cupiditate voluptatem mollitia voluptates consectetur est, nobis illo dolor accusantium? Officiis sunt eveniet aliquam, molestiae aliquid sed. Error, repellendus quo!</div>
+		<div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus sapiente cupiditate voluptatem mollitia voluptates consectetur est, nobis illo dolor accusantium? Officiis sunt eveniet aliquam, molestiae aliquid sed. Error, repellendus quo!</div>
+		<div>consectetur est, nobis illo dolor accusantium? Officiis sunt eveniet aliquam, molestiae aliquid sed. Error, repellendus quo!</div>
+		<div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus sapiente cupiditate voluptatem mollitia voluptates consectetur est</div>
+		<div>Officiis sunt eveniet aliquam, molestiae aliquid sed. Error, repellendus quo!</div>
+	</div>
+</body>
+</html>

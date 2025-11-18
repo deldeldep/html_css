@@ -1,0 +1,73 @@
+*{margin: 0;padding: 0; box-sizing: border-box;}
+body{margin: 20px;}
+.box{border: 5px solid #ddd; padding: 20px; box-sizing: border-box; margin-bottom: 20px;}
+
+.container{border: 1px solid #ccc; margin-bottom: 10px; box-sizing: border-box;}
+.container>div{
+    padding: 20px 40px;
+    background: green;
+    width: 300px;
+    margin: 10px 0;
+}
+.container>div:nth-child(odd){background: rgb(250, 162, 30);}
+
+.contnent1 #opt1{
+    display: flex;
+    flex-direction: row;
+}
+.contnent1 #opt2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.contnent1 #opt3{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width: 1000px) {
+    #opt3{flex-direction: column;}
+}
+.contnent1 #opt4{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.contnent2 #opt11{
+    display: flex;
+    flex-wrap: nowrap;
+}
+@media screen and (max-width: 1000px){
+    .contnent2 #opt11{
+        flex-wrap: wrap;
+    }   
+}
+.contnent2 #opt12{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contnent2 #opt13{
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.contnent3 #opt111{
+    display: flex;
+    justify-content: start;
+}
+.contnent3 #opt112{
+    display: flex;
+    justify-content: end;
+}
+.contnent3 #opt113{
+    display: flex;
+    justify-content: center;
+}
+.contnent3 #opt114{
+    display: flex;
+    justify-content: space-between;
+}
+.contnent3 #opt115{
+    display: flex;
+    justify-content: space-around;
+}
+.contnent3 #opt116{
+    display: flex;
+    justify-content: space-evenly;
+}
