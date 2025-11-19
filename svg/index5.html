@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flower{
+            width: 200px;
+            height: 300px;
+            margin: 50px;           
+        }
+        .cls-1{
+            stroke: #c51d1d;
+            stroke-width: 2;
+            animation: flower1 4s linear forwards;
+            stroke-dasharray: 1556;
+            stroke-dashoffset: 1556;
+        }
+        .cls-2{
+            stroke: #188021;
+            fill: none;
+            stroke-width: 2;
+            animation: flower2 2s linear forwards;
+            stroke-dasharray: 584;
+            stroke-dashoffset: 584;
+            animation-delay: 2s;
+        }
+        @keyframes flower1 {
+            from{
+                stroke-dasharray: 1556;
+            }
+            to{
+                stroke-dasharray: 0;
+            }
+        }
+        @keyframes flower2 {
+            from{
+                stroke-dasharray: 584;
+            }
+            to{
+                stroke-dasharray: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="flower">
+    <?xml version="1.0" encoding="UTF-8"?>
+    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 139.29 441.61">
+    <defs>
+        <style>
+        .cls-1 {
+            fill: none;
+            stroke: #fc490e;
+            stroke-miterlimit: 10;
+        }
+        </style>
+    </defs>
+    <path class="cls-1" d="M86.56,129.29s-17.78-32.59-19.56-52.15-14.81-54.52-14.81-54.52c0,0-5.93-23.7-17.19,0-11.26,23.7-2.37,75.26,5.93,87.7,8.3,12.44,40.89,30.81,51.56,30.81s.59-34.96-16-49.78c-16.59-14.81-39.06-40.38-55.48-53.07-13.04-10.07-15.41-1.19-8.3,29.04,8.21,34.9,18.52,37.6,29.04,49.19,12.08,13.3,21.7,31.74,50.74,30.55s24.89-66.96,18.96-84.15S89.89-35.45,63.04,19.07s-2.56,114.96,8.11,119.7,23.93,15.67,45.86-3.29,22.79-69.71,21.33-79.41c-1.78-11.85-4.49-31.52-7.7-40.3s-10.07-8.3-20.74,4.74c-15.13,18.49-17.89,14.04-19.78,50.11s27.26,160,7.11,204.44-58.67,148.15-59.26,166.52"/>
+    <path class="cls-2" d="M42.34,435.93s61.63-113.78,13.04-178.37C6.79,192.96-1.51,176.96,.86,167.48s18.19-14.22,7.91-2.37-.27,109.71,28.5,131.89,21.07,108.7,18.11,121.14"/>
+    </svg>
+</div>
+</body>
+</html>
